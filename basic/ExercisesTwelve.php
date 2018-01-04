@@ -1,3 +1,8 @@
+<?php
+/*
+ * Write a simple PHP program to check that emails are valid.
+ */
+?>
 <!DOCTYPE html>
 <head>
     <title></title>

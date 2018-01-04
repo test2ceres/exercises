@@ -1,4 +1,7 @@
 <?php
+/*
+ * Write a e PHP script to display string, values within a table
+ */
 echo '<table border="1">
     <tr>
         <td>Salary of Mr. A is</td>
