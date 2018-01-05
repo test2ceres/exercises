@@ -16,26 +16,22 @@
 </form>
 
 <?php
-function checkNumber()
-{
-    if (isset($_POST['number'])) {
-        $num = $_POST['number'];
-        /*if ($num > 30) {
-            echo "{$num} greater than 30";
-        } elseif ($num > 20) {
-            echo "{$num} greater than 20";
-        } elseif ($num > 10) {
-            echo "{$num} greater than 10";
-        }*/
+if (isset($_POST['number'])) {
+    $num = $_POST['number'];
+    /*if ($num > 30) {
+        echo "{$num} greater than 30";
+    } elseif ($num > 20) {
+        echo "{$num} greater than 20";
+    } elseif ($num > 10) {
+        echo "{$num} greater than 10";
+    }*/
 
-        $result = $num > 30 ? "{$num} greater than 30"
-            : ($num > 20 ? "{$num} greater than 20" :
-                ($num > 10 ? "{$num} greater than 10"
-                    : "{$num} don't greater than 10. Input a number atleast greater than 10!"));
-        echo $result;
-    }
+    $result = $num > 30 ? "{$num} greater than 30"
+        : ($num > 20 ? "{$num} greater than 20" :
+            ($num > 10 ? "{$num} greater than 10"
+                : "{$num} don't greater than 10. Input a number atleast greater than 10!"));
+    echo $result;
 }
-checkNumber();
 
 ?>
 </body>
