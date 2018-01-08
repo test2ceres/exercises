@@ -16,6 +16,7 @@
 </form>
 
 <?php
+//TODO: test with " test3.ceres@gmail.com" ==> invalid?
 if (isset($_POST['mail'])) {
     $mail = $_POST['mail'];
     if (FiLTER_VAR($mail, FILTER_VALIDATE_EMAIL)) {

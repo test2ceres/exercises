@@ -9,3 +9,5 @@ $url = parse_url($url);
 echo "Scheme: {$url['scheme']}<br>";
 echo "Host: {$url['host']}<br>";
 echo "Path: {$url['path']}";
+
+//TODO: how do you get 'host' name from url with one line?
