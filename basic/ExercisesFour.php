@@ -12,11 +12,11 @@
 
 <form method="post">
     <input type="text" name="username">
-    <input type="submit">
+    <input type="submit" value="Submit">
 </form>
 
 <?php
-if (isset($_POST['username'])) {
+if (!empty($_POST)) {
     $user = $_POST['username'];
     echo "<h5>Hello {$user}</h5>";
 }

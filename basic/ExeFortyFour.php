@@ -12,25 +12,17 @@
 <h2>Please input number</h2>
 
 <form method="post">
-    <label>Array: <input type="text" name="txtarray"></label><br>
     <label>Mod: <input type="text" name="txtmod"></label><br>
-    <input type="submit">
+    <input type="submit" value="Submit">
 </form>
 
 <?php
-if (isset($_POST['txtarray']) && isset($_POST['txtmod'])) {
-    $arrtxt = $_POST['txtarray'];
+$arr = array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+$str = implode(', ', $arr);
+echo "Array: {$str}<br>";
+if (!empty($_POST)) {
     $mod = $_POST['txtmod'];
-    $i = 0;
-    $string = '';
-    while ($i < $arrtxt) {
-        $string .= $i . ", ";
-        $i++;
-    }
-    echo "Array just entered: {$string}<br>";
     echo "Mod just entered: {$mod}<br>";
-
-    $arr = str_split($string);
     echo "Result: ";
     for ($a = 0; $a <= count($arr); $a++) {
         for ($b = 1; $b < count($arr); $b++) {

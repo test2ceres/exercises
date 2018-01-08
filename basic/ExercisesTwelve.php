@@ -12,12 +12,12 @@
 
 <form method="post">
     <input type="text" name="mail">
-    <input type="submit">
+    <input type="submit" value="Submit" value="Submit">
 </form>
 
 <?php
 //TODO: test with " test3.ceres@gmail.com" ==> invalid?
-if (isset($_POST['mail'])) {
+if (!empty($_POST)) {
     $mail = $_POST['mail'];
     if (FiLTER_VAR($mail, FILTER_VALIDATE_EMAIL)) {
         echo "{$mail} is valid";

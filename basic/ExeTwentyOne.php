@@ -12,11 +12,11 @@
 
 <form method="post">
     <input type="text" name="number">
-    <input type="submit">
+    <input type="submit" value="Submit">
 </form>
 
 <?php
-if (isset($_POST['number'])) {
+if (!empty($_POST)) {
     $num = $_POST['number'];
     /*if ($num > 30) {
         echo "{$num} greater than 30";

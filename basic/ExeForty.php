@@ -13,11 +13,11 @@
 <form method="post">
     <label>Number 1: <input type="text" name="number1"></label><br>
     <label>Number 2: <input type="text" name="number2"></label><br>
-    <label><input type="submit"></label>
+    <label><input type="submit" value="Submit"></label>
 </form>
 
 <?php
-if (isset($_POST['number1']) && isset($_POST['number2'])) {
+if (!empty($_POST)) {
     $number1 = $_POST['number1'];
     $number2 = $_POST['number2'];
     if ($number1 < $number2) {

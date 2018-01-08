@@ -12,11 +12,11 @@
 
 <form method="post">
     <input type="text" name="textstring">
-    <input type="submit">
+    <input type="submit" value="Submit">
 </form>
 
 <?php
-if (isset($_POST['textstring'])) {
+if (!empty($_POST)) {
     echo "Entered: {$_POST['textstring']} <br>";
     $textstring = str_split($_POST['textstring']);
     $counts = array_count_values($textstring);

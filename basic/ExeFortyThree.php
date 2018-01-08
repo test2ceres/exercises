@@ -13,11 +13,11 @@
 <form method="post">
     <label>Array 1: <input type="text" name="arr1"></label><br>
     <label>Array 2: <input type="text" name="arr2"></label><br>
-    <input type="submit">
+    <input type="submit" value="Submit">
 </form>
 
 <?php
-if (isset($_POST['arr1']) && isset($_POST['arr2'])) {
+if (!empty($_POST)) {
     $number1 = $_POST['arr1'];
     $number2 = $_POST['arr2'];
     $numarr1 = explode(' ', trim($number1));

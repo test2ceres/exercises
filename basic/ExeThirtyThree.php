@@ -12,11 +12,11 @@
 
 <form method="post">
     <input type="text" name="word">
-    <input type="submit">
+    <input type="submit" value="Submit">
 </form>
 
 <?php
-if (isset($_POST['word'])) {
+if (!empty($_POST)) {
     $word = $_POST['word'];
     $nums = array('zero',
         'one',

@@ -13,11 +13,11 @@
 
 <form method="post">
     <input type="text" name="number">
-    <input type="submit">
+    <input type="submit" value="Submit">
 </form>
 
 <?php
-if (isset($_POST['number'])) {
+if (!empty($_POST)) {
     $number = $_POST['number'];
     $lenght = strlen($number);
     $sum = 0;

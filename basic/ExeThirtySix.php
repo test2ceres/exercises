@@ -13,11 +13,11 @@
 <form method="post">
     <label>String 1: <input type="text" name="string1"></label><br>
     <label>String 2: <input type="text" name="string2"></label><br>
-    <input type="submit">
+    <input type="submit" value="Submit">
 </form>
 
 <?php
-if (isset($_POST['string1']) && isset($_POST['string2'])) {
+if (!empty($_POST)) {
     $str1 = $_POST['string1'];
     $str2 = $_POST['string2'];
     echo "String 1: {$str1} <br>";

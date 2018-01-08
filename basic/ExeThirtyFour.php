@@ -14,11 +14,11 @@
     <label>Number: <input type="text" name="number"></label><br>
     <label>Position 1: <input type="text" name="pos1"></label><br>
     <label>Position 2: <input type="text" name="pos2"></label><br>
-    <label><input type="submit"></label>
+    <input type="submit" value="Submit">
 </form>
 
 <?php
-if (isset($_POST['number'])) {
+if (!empty($_POST)) {
     $number = $_POST['number'];
     $convertbit = decbin($number);
     echo "Bit: {$convertbit}<br>";
